@@ -26,5 +26,8 @@
     <ClCompile Include="04장-CircularQueue.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="04장-CircularDeque.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

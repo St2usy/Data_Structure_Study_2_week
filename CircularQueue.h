@@ -26,21 +26,21 @@ public:
 		else return false;
 	}
 	void enqueue(int n) {
-		if (isFuLL()) { error("Error :: Stack is Empty !!"); }
+		if (isFuLL()) { error("Error :: Queue is Full !!"); }
 		else {
 			rear = (rear + 1) % MAX_QUEUE_SIZE;
 			data[rear] = n;
 		}
 	}
 	int dequeue() {
-		if (isEmpty()) { error("Error :: Stack is Empty !!"); }
+		if (isEmpty()) { error("Error :: Queue is Empty !!"); }
 		else {
 			front = (front + 1) % MAX_QUEUE_SIZE;
 			return data[front];
 		}
 	}
 	int peek() {
-		if (isEmpty()) { error("Error :: Stack is Empty !!"); }
+		if (isEmpty()) { error("Error :: Queue is Empty !!"); }
 		else {
 			return data[(front + 1) % MAX_QUEUE_SIZE];
 		}
@@ -48,15 +48,9 @@ public:
 	void display() {
 		std::cout << "Å¥ °¹¼ö´Â : " << rear - front << std::endl;
 		std::cout << "---------------Queue---------------" << std::endl;
-		if (front < rear) {
-			for (int i = (front + 1) % MAX_QUEUE_SIZE; i <= rear % MAX_QUEUE_SIZE; i++) {
-				std::cout << data[i] << std::endl;
-			}
-		}
-		else {
-			for (int i = (front + 1) % MAX_QUEUE_SIZE; i <= (rear + MAX_QUEUE_SIZE) % MAX_QUEUE_SIZE; i++) {
-				std::cout << data[i] << std::endl;
-			}
+		int maxi = (front < rear) ? rear : rear + MAX_QUEUE_SIZE;
+		for (int i = front + 1; i <= maxi; i++) {
+			std::cout << data[i % MAX_QUEUE_SIZE] << std::endl;
 		}
 	}
 };

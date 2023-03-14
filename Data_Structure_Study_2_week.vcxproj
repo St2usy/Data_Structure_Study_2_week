@@ -131,6 +131,7 @@
     <ClInclude Include="CircularQueue.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="04장-CircularDeque.cpp" />
     <ClCompile Include="04장-CircularQueue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
