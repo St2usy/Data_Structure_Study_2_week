@@ -21,12 +21,36 @@
     <ClInclude Include="CircularDeque.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Customer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomerQueue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BankSimulator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Location2D.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="04장-CircularQueue.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="04장-CircularDeque.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="04장-BankSimulator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MazeEscape_Queue.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MazeEscape_Deque_BFS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MazeEscape_Deque_DFS.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

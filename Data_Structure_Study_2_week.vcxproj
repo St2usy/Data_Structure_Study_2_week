@@ -127,12 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BankSimulator.h" />
     <ClInclude Include="CircularDeque.h" />
     <ClInclude Include="CircularQueue.h" />
+    <ClInclude Include="Customer.h" />
+    <ClInclude Include="CustomerQueue.h" />
+    <ClInclude Include="Location2D.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="04장-BankSimulator.cpp" />
     <ClCompile Include="04장-CircularDeque.cpp" />
     <ClCompile Include="04장-CircularQueue.cpp" />
+    <ClCompile Include="MazeEscape_Deque_BFS.cpp" />
+    <ClCompile Include="MazeEscape_Deque_DFS.cpp" />
+    <ClCompile Include="MazeEscape_Queue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
